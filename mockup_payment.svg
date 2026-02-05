@@ -1,0 +1,34 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.23 0 0 0 0 0.51 0 0 0 0 0.96 0 0 0 1 0"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="#0F172A"/> <!-- Dark background -->
+  
+  <!-- Security Shield Glow -->
+  <circle cx="300" cy="200" r="100" fill="#3B82F6" opacity="0.2" filter="url(#glow)"/>
+  
+  <!-- Main Shield -->
+  <path d="M300 80 L400 120 V 200 C 400 280, 300 350, 300 350 C 300 350, 200 280, 200 200 V 120 L 300 80 Z" 
+        fill="#1E293B" stroke="#3B82F6" stroke-width="4"/>
+        
+  <!-- Lock Icon -->
+  <g transform="translate(270, 170)">
+     <rect x="0" y="30" width="60" height="40" rx="4" fill="#60A5FA"/>
+     <path d="M10 30 V 15 C 10 5, 50 5, 50 15 V 30" stroke="#60A5FA" stroke-width="4" fill="none"/>
+     <circle cx="30" cy="50" r="4" fill="#0F172A"/>
+  </g>
+  
+  <!-- Floating Elements -->
+  <rect x="420" y="150" width="120" height="70" rx="8" fill="white" transform="rotate(15 420 150)" opacity="0.9"/>
+  <rect x="430" y="180" width="30" height="20" rx="4" fill="#EB001B" transform="rotate(15 430 180)"/> <!-- Mastercard/Visa ish -->
+  <circle cx="445" cy="190" r="10" fill="#F79E1B" transform="rotate(15 445 190)"/>
+  
+  <rect x="60" y="200" width="120" height="70" rx="8" fill="white" transform="rotate(-15 60 200)" opacity="0.9"/>
+  <text x="80" y="240" font-family="sans-serif" font-weight="bold" font-size="14" fill="#003087" transform="rotate(-15 60 200)">PayPal</text>
+  
+  <text x="300" y="380" font-family="sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle" letter-spacing="2">256-BIT ENCRYPTION</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <defs>
+    <filter id="card-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="metal-grad" x1="0" y1="0" x2="1" y2="1">
+       <stop offset="0%" stop-color="#334155"/>
+       <stop offset="50%" stop-color="#1E293B"/>
+       <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="#E2E8F0"/>
+
+  <g transform="translate(100, 60)">
+     <!-- Checkbox Container -->
+     <rect width="400" height="300" rx="16" fill="white" filter="url(#card-shadow)"/>
+     
+     <text x="40" y="50" font-family="sans-serif" font-size="18" font-weight="bold" fill="#0F172A">Checkout</text>
+     
+     <g transform="translate(40, 80)">
+       <!-- Card Visual -->
+       <rect width="320" height="180" rx="12" fill="url(#metal-grad)"/>
+       
+       <!-- Chip -->
+       <rect x="30" y="80" width="45" height="35" rx="6" fill="#FCD34D"/>
+       <path d="M30 92 H75" stroke="#B45309" stroke-width="1" opacity="0.3"/>
+       <path d="M30 102 H75" stroke="#B45309" stroke-width="1" opacity="0.3"/>
+       <path d="M52 80 V115" stroke="#B45309" stroke-width="1" opacity="0.3"/>
+
+       <!-- Text -->
+       <text x="300" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="end" font-style="italic">VISA</text>
+       
+       <text x="30" y="140" font-family="monospace" font-size="20" fill="white" letter-spacing="2">4242 4242 4242 9821</text>
+       
+       <text x="30" y="165" font-family="sans-serif" font-size="10" fill="#94A3B8" letter-spacing="1">CARD HOLDER</text>
+       <text x="250" y="165" font-family="sans-serif" font-size="10" fill="#94A3B8" letter-spacing="1">EXPIRES</text>
+       <text x="250" y="150" font-family="monospace" font-size="12" fill="white">12/28</text>
+     </g>
+     
+     <!-- Pay Button -->
+     <g transform="translate(40, 280)"> <!-- Moved down -->
+        <!--  Actually I'll put it inside the box -->
+     </g>
+  </g>
+  
+  <rect x="140" y="330" width="320" height="48" rx="8" fill="#3B82F6"/>
+  <text x="300" y="360" font-family="sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Pay $450.00</text>
+</svg>
